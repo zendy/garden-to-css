@@ -20,7 +20,7 @@ module.exports = {
   },
   devServer: {
     contentBase: PATHS.dist,
-    port: 8080,
+    port: 8081,
     historyApiFallback: true,
     // hot: true,
     inline: true,
@@ -52,8 +52,8 @@ module.exports = {
       {
         // browse to http://localhost:3000/ during development
         host: 'localhost',
-        port: 8081,
-        proxy: 'http://localhost:8080/',
+        port: 8082,
+        proxy: 'http://localhost:8081/',
       },
       // plugin options
       {
