@@ -1,0 +1,28 @@
+{
+  "name": "garden-to-css",
+  "version": "1.0.0",
+  "description": "transpile garden to css",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --watch",
+    "start": "webpack-dev-server"
+  },
+  "repository": "https://zendy@github.com/zendy/garden-to-css.git",
+  "author": "zendy <zendywongso@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zendy/otoma/issues"
+  },
+  "homepage": "https://github.com/zendy/otoma#readme",
+  "dependencies": {
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.7",
+    "babel-preset-es2015-native-modules": "^6.9.4"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.17.5",
+    "browser-sync-webpack-plugin": "^1.1.3",
+    "webpack": "^2.1.0-beta.25",
+    "webpack-dev-server": "^2.1.0-beta.10"
+  }
+}
