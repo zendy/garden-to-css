@@ -4,7 +4,6 @@
   "description": "transpile garden to css",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --watch",
     "start": "webpack-dev-server"
   },
   "repository": "https://zendy@github.com/zendy/garden-to-css.git",
