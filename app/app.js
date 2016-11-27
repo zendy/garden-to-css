@@ -6,7 +6,15 @@ const grabInput = () => {
 };
 
 const transpileCss = (content) => {
-  let result = content.replace(/\[/g, '');
+  const result = content
+              .replace(/:&:/g, '& ')
+              .replace(/(:)/g, '')
+              .replace(/(\s)+"/g, ': ')
+              .replace(/"/g, '')
+              .replace(/(\[)/g, '')
+              .replace(/(\])/g, '')
+              .replace(/(\s)+{/g, '\n{\n')
+              .replace(/}/g, '\n}');
   return result;
 };
 
